@@ -1,3 +1,13 @@
+body{
+  max-width: 1920px;
+  min-height: 100vh;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  background-color: #FFF3EE;
+  text-align: center;
+  color:purple;
+}
 .yiyun_profile {
 	margin: 0 auto;
 	width: 310px;
@@ -23,11 +33,14 @@
   letter-spacing: 10px;
 }
 
-.yiyun_profile_inner strong {
-  display: block;
-  color: #e97792;
-  font-size: 24px;
-  font-family: "Maru Folk Medium", sans-serif;
-  letter-spacing: 2px;
-  text-shadow: 1px 1px 0 #fff, 3px 3px 0 #f1e3df;
+blockcontainer{
+  display:flex;
+  flex-direction: row;
+  height: 90vh;
+}
+
+.container{
+  display:block;
+  flex-direction:column;
+
 }
