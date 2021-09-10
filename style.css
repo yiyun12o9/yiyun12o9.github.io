@@ -1,12 +1,11 @@
 body{
-  max-width: 1920px;
-  min-height: 100vh;
   display: flex;
-  place-items: center;
-  flex-direction: column;
-  background-color: #FFF3EE;
+  height: 97vh;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color:purple;
+  overflow: hidden;  
+  background-color: #ECF5FF; 
 }
 .yiyun_profile {
 	margin: 0 auto;
@@ -33,6 +32,11 @@ body{
   letter-spacing: 10px;
 }
 
+.word {
+  font-weight: 600;
+  color:	#000079;
+}
+
 blockcontainer{
   display:flex;
   flex-direction: row;
@@ -43,4 +47,15 @@ blockcontainer{
   display:block;
   flex-direction:column;
 
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sizeVar);
+  font-size: var(--sizeVar);
+  color: #333333;
+  background-color: white;
+  padding: 30px 60px;
+  border-radius: 16px;
+  box-shadow: 0px 2px 15px	#2894FF, 0px 8px 80px #D2E9FF;
 }
