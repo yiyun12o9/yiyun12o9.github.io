@@ -30,9 +30,10 @@ body{
 	text-decoration: none;
 }
 #contents{
-	width: 780x;
+	box-sizing: border-box;
+	max-width: 960px;
 	margin: 40px auto;
-	padding: 40px 80px;
+	padding: 4% 8%;
 	border: 1px solid #FF2D2D;
 	background-color: #FFFFFF;
 }
@@ -64,35 +65,28 @@ h2{
 	text-align: left; /*對齊方式*/
 	line-height: 1; /*行高*/
 }
-h3{
-	margin-left: 10px;
-	margin-bottom: 10px;
-	color: #004B97; /*文字的顏色*/
-	font-size: 180%; /*字型大小*/
-	text-align: left; /*對齊方式*/
-}
 .about{
-	text-align: left;
-}
-.intr2D{
 	text-align: left;
 }
 .intr3D{
 	text-align: left;
 }
-.sketchfab-embed-wrapper{
-	
+.email .github .fb{
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+	margin-left: 100px;
+}
+.sketchfab-embed-wrapper iframe{
+	width: 100%;
 }
 .imgme{
+	max-width: 100%;
+	height: auto;
 	border-radius: 50%;/*圓角半徑*/
 	float: left;
 	margin-right: 50px;
 	margin-left: 100px;
-}
-.email{
-	margin-left: 10px;
-	margin-bottom: 20px;
-	margin-top: 2px;
 }
 header,nav{
 	text-align: center;
@@ -101,4 +95,17 @@ header,nav{
 	content: "";
 	display: block;
 	clear: both;
+}
+@media screen and (max-width: 790px) {
+	.menu li{
+		display: block; 
+		width: 60%; 
+		margin: 0 auto 10px;
+	}
+	.imgme{
+		float: none;
+	}
+	.about{
+		text-align: left;
+	}
 }
