@@ -97,6 +97,10 @@ header,nav{
 	clear: both;
 }
 @media screen and (max-width: 790px) {
+	h1{
+		width: 200px;
+		font-size: 200%;
+	}
 	.menu li{
 		display: block; 
 		width: 60%; 
@@ -107,5 +111,11 @@ header,nav{
 	}
 	.about{
 		text-align: left;
+	}
+	.email .github .fb{
+		max-width: 100%;
+		height: auto;
+		display: inline-block;
+		margin-left: 100px;
 	}
 }
