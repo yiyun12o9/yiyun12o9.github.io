@@ -1,121 +1,137 @@
 @charset "utf-8";
-
+html{
+	margin: 0;
+}
 body{
-	background-color: #ECF5FF;
-	background-image: url(img/bg.jpg);
-	background-repeat: no-repeat;
-	background-size: 1700px 160px;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300; /*字型寬度*/
+	line-height: 1.5; /*行高*/
+	color: #333; /*字型顏色*/
 }
-.menu li{
-	list-style-type: none; /*項目符號樣式*/
-	display: inline-block; 
-	width: 180px; 
-	margin: 0 20px;
-}
-.menu a{
-	display: block;
-	padding: 10px;
-	background: #005AB5;
-	border-radius: 8px;
-	color: #FFFFFF;
-	font-size: 130%;
-	text-decoration: none;
-}
-.menu a:hover{
-	color: #FF7575;
-	text-decoration: none;
-}
-.menu a:active{
-	color: #FF5151;
-	text-decoration: none;
-}
-#contents{
-	box-sizing: border-box;
-	max-width: 960px;
-	margin: 40px auto;
-	padding: 4% 8%;
-	border: 1px solid #FF2D2D;
-	background-color: #FFFFFF;
-}
-#contents > section + section{
-	margin-top: 80px;
-}
-h1{
-	width: 300px;
-	border-radius: 50%;/*圓角半徑*/
-	text-shadow: 1px 1px 2px #6C6C6C; /*文字陰影*/ /*x位移 y位移 模糊強度 陰影色*/
-	box-shadow: 2px 2px 10px #000000; /*外框陰影*/
-	background-image: linear-gradient(to bottom,#005AB5,#46A3FF);/*背景漸層色*/
-	font-family: 'Lora', serif;/*字體*/
-	margin: 40px auto; /*框線外側邊界*/
-	padding: 40px; /*框線內側邊界*/
-	border: 5px solid #ACD6FF; /*框線*/
-	color: #FFFFFF; /*文字的顏色*/
-	font-size: 300%; /*字型大小*/
-	text-align: center; /*對齊方式*/
-	line-height: 1; /*行高*/
-}
-h2{
-	padding: 10px; /*框線內側邊界*/
-	margin-bottom: 30px;
-	border: 1px dotted 	#2894FF; /*框線*/
-	border-left: 10px solid #2894FF; /*左側框線*/
-	color: #004B97; /*文字的顏色*/
-	font-size: 150%; /*字型大小*/
-	text-align: left; /*對齊方式*/
-	line-height: 1; /*行高*/
-}
-.about{
-	text-align: left;
-}
-.intr3D{
-	text-align: left;
-}
-.email .github .fb{
-	max-width: 100%;
-	height: auto;
-	display: inline-block;
-	margin-left: 100px;
-}
-.sketchfab-embed-wrapper iframe{
-	width: 100%;
-}
-.imgme{
-	max-width: 100%;
-	height: auto;
-	border-radius: 50%;/*圓角半徑*/
-	float: left;
-	margin-right: 50px;
-	margin-left: 100px;
-}
-header,nav{
+ul{
+	margin: 0 auto 0; 
+	padding: 0; 
+	list-style: none; 
+	display: table;
+	width: 600px;
 	text-align: center;
 }
-.clearfix::after{
+li{
+	position: relative; 
+	display: table-cell; 
+	padding: 15px 0;
+}
+a{
+	color: #333;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.15em;
+  
+	display: inline-block;
+	padding: 15px 20px;
+	position: relative;
+}
+a:after{
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
 	content: "";
 	display: block;
-	clear: both;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #333;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+a:hover:after{
+	width: 100%; 
+	left: 0;
+}
+header{
+	background-color: #84b4b1; 
+	background-image: url(img/bg2.jpg); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	color: #333;
+	text-align: center; /*對齊方式*/
+	padding: 30px 0 200px; /*框線內側邊界 上 左右 下*/
+	font-family: 'Montserrat', sans-serif;	
+}
+h1{
+	text-align: center;
+	text-transform: uppercase; /*文字字母的大小寫*/
+	font-size: 65px; /*字型大小*/
+	font-weight: 400; 
+	letter-spacing: 3px; /*字元間距*/
+	line-height: 0.8; 
+	padding-top: 250px; /*框線內側上邊界*/
+}
+.name{
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	font-size: 60px;
+	line-height: 2;
+}
+h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	line-height: 0.8;
+	padding-top: 5px;
+}
+#aboutme{
+	background-color: #84b4b1; 
+	background-repeat: no-repeat; 
+	background-size: 100%; 
+	color: #333;
+	text-align: center; 
+	padding: 30px 0 200px; 
+	font-family: 'Montserrat', sans-serif;	
+}
+
+#skills{
+	background-color: #fff; 
+	background-repeat: no-repeat; 
+	background-size: 100%; 
+	color: #333;
+	text-align: center; 
+	padding: 30px 0 200px; 
+	font-family: 'Montserrat', sans-serif;	
+}
+#portfolio{
+	background-color: #84b4b1; 
+	background-repeat: no-repeat; 
+	background-size: 100%; 
+	color: #333;
+	text-align: center; 
+	padding: 30px 0 200px; 
+	font-family: 'Montserrat', sans-serif;	
+}
+#contact{
+	background-color: #fff; 
+	background-repeat: no-repeat; 
+	background-size: 100%; 
+	color: #333;
+	text-align: center; 
+	padding: 30px 0 200px; 
+	font-family: 'Montserrat', sans-serif;	
+}
+.me img{
+	border-radius: 50%;
+}
+.about{
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Lato', sans-serif;
 }
 @media screen and (max-width: 790px) {
 	h1{
-		width: 200px;
-		font-size: 200%;
+		font-size: 40px;
 	}
-	.menu li{
-		display: block; 
-		width: 60%; 
-		margin: 0 auto 10px;
-	}
-	.imgme{
-		float: none;
-	}
-	.about{
-		text-align: left;
-	}
-	.email .github .fb{
-		max-width: 100%;
-		height: auto;
-		display: inline-block;
-		margin-left: 100px;
+	.name{
+		font-size: 35px;
 	}
 }
