@@ -4,35 +4,53 @@ html{
 }
 body{
 	margin: 0;
+	background-color: #ECF5FF;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300; /*字型寬度*/
 	line-height: 1.5; /*行高*/
 	color: #333; /*字型顏色*/
 }
-ul{
-	margin: 0 auto 0; 
-	padding: 0; 
-	list-style: none; 
-	display: table;
-	width: 600px;
-	text-align: center;
+.top{
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 70px;
+
 }
-li{
+.myname{
+	border: none;
+	background: none;
+	float: left;
+	margin: 15px 0 0 20px; /*上、右邊、下、左邊*/
+}
+.myname a{
+	display: block;
+	font-size: 250%;
+	color: #333;
+	font-family: 'Caveat', sans-serif;
+	text-decoration: none; /*超連結不要出現底線*/
+}
+
+.menu{
+	float: right;
+	line-height: 51px;
+}
+.menu li{
 	position: relative; 
 	display: table-cell; 
-	padding: 15px 0;
+	padding: 0;
 }
-a{
+.menu a{
 	color: #333;
 	text-transform: uppercase;
 	text-decoration: none;
 	letter-spacing: 0.15em;
-  
+	font-family: 'Montserrat', sans-serif;	
 	display: inline-block;
-	padding: 15px 20px;
+	padding: 0 20px;
 	position: relative;
 }
-a:after{
+.menu a:after{
 	background: none repeat scroll 0 0 transparent;
 	bottom: 0;
 	content: "";
@@ -44,11 +62,12 @@ a:after{
 	transition: width 0.3s ease 0s, left 0.3s ease 0s;
 	width: 0;
 }
-a:hover:after{
+.menu a:hover:after{
 	width: 100%; 
 	left: 0;
 }
 header{
+	padding-top: 70px;
 	background-color: #84b4b1; 
 	background-image: url(img/bg2.jpg); 
 	background-repeat: no-repeat; 
@@ -61,71 +80,179 @@ header{
 h1{
 	text-align: center;
 	text-transform: uppercase; /*文字字母的大小寫*/
-	font-size: 65px; /*字型大小*/
+	font-size: 50px; /*字型大小*/
 	font-weight: 400; 
 	letter-spacing: 3px; /*字元間距*/
-	line-height: 0.8; 
-	padding-top: 250px; /*框線內側上邊界*/
+	line-height: 50px; 
+	padding-top: 260px; /*框線內側上邊界*/
+	animation: trans 3s;
+	position: relative;
 }
 .name{
 	text-transform: uppercase;
 	letter-spacing: 7px;
-	font-size: 60px;
-	line-height: 2;
+	font-size: 100px;
+	line-height: 150px;
+	animation: trans 4s;
+	position: relative;
+}
+@keyframes trans{
+	0%{opacity: 0;},
+	100%{opacity: 1;}
 }
 h2{
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 50px;
+	font-size: 45px;
 	font-weight: 400;
 	letter-spacing: 3px;
 	line-height: 0.8;
+	margin-top: 5px;
 	padding-top: 5px;
 }
 #aboutme{
-	background-color: #84b4b1; 
-	background-repeat: no-repeat; 
-	background-size: 100%; 
+	/*background-color: #fff;*/
 	color: #333;
 	text-align: center; 
-	padding: 30px 0 200px; 
+	padding: 30px 0 300px; 
 	font-family: 'Montserrat', sans-serif;	
 }
 
 #skills{
-	background-color: #fff; 
-	background-repeat: no-repeat; 
-	background-size: 100%; 
+	background-color: #fff;
 	color: #333;
 	text-align: center; 
-	padding: 30px 0 200px; 
+	padding: 30px 0 100px; 
 	font-family: 'Montserrat', sans-serif;	
 }
 #portfolio{
-	background-color: #84b4b1; 
-	background-repeat: no-repeat; 
-	background-size: 100%; 
+	/*background-color: #fff;*/
 	color: #333;
 	text-align: center; 
 	padding: 30px 0 200px; 
 	font-family: 'Montserrat', sans-serif;	
 }
 #contact{
-	background-color: #fff; 
-	background-repeat: no-repeat; 
-	background-size: 100%; 
+	/*background-color: #84b4b1;*/
 	color: #333;
 	text-align: center; 
-	padding: 30px 0 200px; 
+	padding: 30px 0 70px; 
 	font-family: 'Montserrat', sans-serif;	
 }
-.me img{
+.custom-btn {
+	width: 200px;
+	height: 200px;
+	color: #fff;
 	border-radius: 50%;
+	padding: 10px 25px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	background: transparent;
+	cursor: pointer; /*改變滑鼠游標的形狀*/
+	transition: all 0.3s ease; /*屬性 變化時間 變化方式*/
+	position: relative;
+	display: inline-block;
+	box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+	7px 7px 20px 0px rgba(0,0,0,.1),
+	4px 4px 5px 0px rgba(0,0,0,.1);
+	outline: none;
+}
+.btn-3 {
+	background: rgb(0,172,238);
+	background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%); /*漸層色*/
+	margin: 50px 15px;
+	width: 200px;
+	height: 200px;
+	line-height: 200px;
+	padding: 0;
+	border: none;
+}
+.btn-3 a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 200%;
+}
+.btn-3 span {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+	position: absolute;
+	content: "";
+	right: 0;
+	top: 0;
+	background: rgba(2,126,251,1);
+	transition: all 0.3s ease;
+}
+.btn-3:before {
+	height: 0%;
+	width: 2px;
+}
+.btn-3:after {
+	width: 0%;
+	height: 2px;
+}
+.btn-3:hover{
+	background: transparent;
+	box-shadow: none;
+}
+.btn-3:hover:before {
+	height: 100%;
+}
+.btn-3:hover:after {
+	width: 100%;
+}
+.btn-3 span:hover{
+	color: rgba(2,126,251,1);
+}
+.btn-3 span:before,
+.btn-3 span:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	background: rgba(2,126,251,1);
+	transition: all 0.3s ease;
+}
+.btn-3 span:before {
+	width: 2px;
+	height: 0%;
+}
+.btn-3 span:after {
+	width: 0%;
+	height: 2px;
+}
+.btn-3 span:hover:before {
+	height: 100%;
+}
+.btn-3 span:hover:after {
+	width: 100%;
+}
+.me{
+	border-radius: 50%;
+	float: left;
+	margin-left: 300px;
+ 	transition: border-radius 0.5s ease 0s;
+}
+.me:hover{
+	border-radius: 5%;
+	transition: border-radius 0.5s ease 0s;
 }
 .about{
-	text-align: center;
+
+	text-align: left;
+	float: left;
 	font-size: 25px;
+	margin-left: 100px; 
 	font-family: 'Lato', sans-serif;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
 }
 @media screen and (max-width: 790px) {
 	h1{

@@ -7,32 +7,59 @@
 <link rel="stylesheet" href="./style.css" media="all"> <!--載入CSS檔-->
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'><!--字體-->
 <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'><!--字體-->
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-<ul>
-	<li><a href="#aboutme">About</a>
-	<li><a href="#skills">Skills</a>
-	<li><a href="#portfolio">Portfolio</a>
-	<li><a href="#contact">Contact</a>
-</ul>
+<div class="top">
+	<div class="myname">
+		<a href="#">YiYunLi</a>
+	</div>
+	<ul class="menu">
+		<li><a href="#aboutme">About</a>
+		<li><a href="#skills">Skills</a>
+		<li><a href="#portfolio">Portfolio</a>
+		<li><a href="#contact">Contact</a>
+	</ul>
+</div>
 <header>
 <h1>Hello~I'm<br><span class="name">Yi Yun</span></h1>
 </header>
-<section id="aboutme">
+<section id="aboutme" class="clearfix">
 <h2>about me</h2>
-<div class="me"><img src="img/yiyun.jpg" width="300" height="300" alt="頭貼"></div>
+<img src="img/yiyun.jpg" width="350" height="350" alt="頭貼" class="me">
 <p class="about">嗨！我是李亦芸(｡･∀･)ﾉﾞ<br>就讀銘傳大學資訊傳播工程學系<br>
 目前正在努力學習程式語言o(*￣▽￣*)ブ<br>希望自己可以越來越進步~✧◝(⁰▿⁰)◜✧<br>
-興趣是彈吉他、打羽球、3D建模，歡迎交流\(ϋ)/♩<br></p>
+興趣是彈吉他、打羽球、3D建模<br>歡迎交流\(ϋ)/♩<br></p>
 </section>
 <section id="skills">
 <h2>skills</h2>
+<div>
+	<h3>文件處理</h3>
+	<p>Word<br>PowerPoint</p>
+</div>
+<div>
+	<h3>程式設計</h3>
+	<p>C<br>C#<br>HTML<br>CSS<br>Processing<br>Unity</p>
+</div>
+<div>
+	<h3>2D/3D設計</h3>
+	<p>Maya<br>Adobe Animate<br>Adobe Illustrator</p>
+</div>
+<div>
+	<h3>影片剪輯</h3>
+	<p>Adobe Premiere</p>
+</div>
 </section>
 <section id="portfolio">
 <h2>portfolio</h2>
 </section>
 <section id="contact">
 <h2>contact</h2>
+<div>
+	<button class="custom-btn btn-3"><a href="mailto:yoyolee7012@gmail.com"><span>Email</span></a></button>
+	<button class="custom-btn btn-3"><a href="https://github.com/yiyun12o9" target="_blank"><span>Github</span></a></button>
+	<button class="custom-btn btn-3"><a href="https://www.facebook.com/yiyun12o9/" target="_blank"><span>Facebook</span></a></button>
+</div>
 </section>
 </body>
 </html>
