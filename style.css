@@ -1,12 +1,13 @@
 @charset "utf-8";
 html{
 	margin: 0;
+	text-size-adjust: 100%;
 }
 body{
 	margin: 0;
 	background-color: #ECF5FF;
 	font-family: 'Lato', sans-serif;
-	font-weight: 300; /*字型寬度*/
+	font-weight: 300; /*字型粗細*/
 	line-height: 1.5; /*行高*/
 	color: #333; /*字型顏色*/
 }
@@ -28,7 +29,7 @@ body{
 	font-size: 250%;
 	color: #333;
 	font-family: 'Caveat', sans-serif;
-	text-decoration: none; /*超連結不要出現底線*/
+	text-decoration: none; /*文字樣式*/
 }
 
 .menu{
@@ -76,29 +77,51 @@ header{
 	text-align: center; /*對齊方式*/
 	padding: 30px 0 200px; /*框線內側邊界 上 左右 下*/
 	font-family: 'Montserrat', sans-serif;	
+	overflow: hidden;
 }
 h1{
-	text-align: center;
+	display: block;
 	text-transform: uppercase; /*文字字母的大小寫*/
-	font-size: 50px; /*字型大小*/
+	font-size: 2em; /*字型大小*/
 	font-weight: 400; 
 	letter-spacing: 3px; /*字元間距*/
-	line-height: 50px; 
 	padding-top: 260px; /*框線內側上邊界*/
-	animation: trans 3s;
 	position: relative;
 }
 .name{
-	text-transform: uppercase;
-	letter-spacing: 7px;
-	font-size: 100px;
-	line-height: 150px;
-	animation: trans 4s;
-	position: relative;
+	display: block;
+    font-weight: 400;
+    font-size: 3.5rem;
+    letter-spacing: 10px;
+	animation: trans 1s ease;
 }
-@keyframes trans{
-	0%{opacity: 0;},
-	100%{opacity: 1;}
+.name1{
+	display: block;
+    font-weight: 550;
+    font-size: 6rem;
+    letter-spacing: 20px;
+    word-spacing: 30px;
+	animation: trans1 2s ease;
+}
+@-webkit-keyframes trans{
+	0%{
+		opacity: 0;
+	    transform: translateX(-110px);
+	}
+	100%{ 
+		opacity: 1;
+		transform: translate(0px);
+	}
+}
+@-webkit-keyframes trans1{
+	0%{
+		opacity: 0;
+		transform: translateX(100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0px);
+	}
 }
 h2{
 	text-align: center;
@@ -253,6 +276,9 @@ h2{
 	content: "";
 	display: block;
 	clear: both;
+}
+.allskill ul{
+	list-style-type: none;
 }
 @media screen and (max-width: 790px) {
 	h1{
