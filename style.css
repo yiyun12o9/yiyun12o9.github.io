@@ -11,6 +11,9 @@ body{
 	line-height: 1.5; /*行高*/
 	color: #333; /*字型顏色*/
 }
+ul li{
+	list-style: none;
+}
 .top{
 	position: fixed;
 	left: 0;
@@ -277,14 +280,16 @@ h2{
 	display: block;
 	clear: both;
 }
-.allskill ul{
-	list-style-type: none;
+.mini_top, .mini_icon, .mini_menu{
+	display: none;
 }
-@media screen and (max-width: 790px) {
-	h1{
-		font-size: 40px;
+
+@media screen and (max-width: 700px) {
+	.top, .myname, .menu{display: none;}
+	.mini_top, .mini_icon, .mini_menu{
+		display: block;
 	}
-	.name{
-		font-size: 35px;
-	}
+	.mini_top{position: fixed;}
+	.name{font-size: 35px;}
+	.name1{font-size: 70px;}
 }
