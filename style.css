@@ -1,31 +1,57 @@
 @charset "utf-8";
-html{
+html, body{
 	margin: 0;
 	text-size-adjust: 100%;
 }
 body{
-	margin: 0;
-	background-color: #ECF5FF;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300; /*字型粗細*/
 	line-height: 1.5; /*行高*/
 	color: #333; /*字型顏色*/
 }
-ul li{
+ul, li{
+	margin: 0;
+	padding: 0;
 	list-style: none;
+}
+h1{
+	display: block;
+	text-transform: uppercase; /*文字字母的大小寫*/
+	font-size: 2em; /*字型大小*/
+	font-weight: 400; 
+	padding-top: 260px; /*框線內側上邊界*/
+	position: relative;
+}
+h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 45px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	line-height: 0.8;
+}
+header{
+	background-attachment: fixed; /*背景不滾動*/
+	background-image: url(img/bg.jpg); 
+	background-size: cover; 
+	color: #333;
+	text-align: center; /*對齊方式*/
+	padding: 30px 0 200px; /*框線內側邊界 上 左右 下*/
+	font-family: 'Montserrat', sans-serif;	
+	overflow: hidden;
 }
 .top{
 	position: fixed;
 	left: 0;
 	right: 0;
 	height: 70px;
-
+	z-index: 2100;
 }
 .myname{
 	border: none;
 	background: none;
 	float: left;
-	margin: 15px 0 0 20px; /*上、右邊、下、左邊*/
+	margin: 0 0 0 20px; /*上、右邊、下、左邊*/
 }
 .myname a{
 	display: block;
@@ -47,7 +73,6 @@ ul li{
 .menu a{
 	color: #333;
 	text-transform: uppercase;
-	text-decoration: none;
 	letter-spacing: 0.15em;
 	font-family: 'Montserrat', sans-serif;	
 	display: inline-block;
@@ -62,34 +87,13 @@ ul li{
 	height: 2px;
 	left: 50%;
 	position: absolute;
-	background: #333;
+	background: #0066CC;
 	transition: width 0.3s ease 0s, left 0.3s ease 0s;
 	width: 0;
 }
 .menu a:hover:after{
 	width: 100%; 
 	left: 0;
-}
-header{
-	padding-top: 70px;
-	background-color: #84b4b1; 
-	background-image: url(img/bg2.jpg); 
-	background-repeat: no-repeat; 
-	background-size: cover; 
-	color: #333;
-	text-align: center; /*對齊方式*/
-	padding: 30px 0 200px; /*框線內側邊界 上 左右 下*/
-	font-family: 'Montserrat', sans-serif;	
-	overflow: hidden;
-}
-h1{
-	display: block;
-	text-transform: uppercase; /*文字字母的大小寫*/
-	font-size: 2em; /*字型大小*/
-	font-weight: 400; 
-	letter-spacing: 3px; /*字元間距*/
-	padding-top: 260px; /*框線內側上邊界*/
-	position: relative;
 }
 .name{
 	display: block;
@@ -126,24 +130,32 @@ h1{
 		transform: translate(0px);
 	}
 }
-h2{
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 45px;
-	font-weight: 400;
-	letter-spacing: 3px;
-	line-height: 0.8;
-	margin-top: 5px;
-	padding-top: 5px;
-}
+
 #aboutme{
-	/*background-color: #fff;*/
+	background-color: #ECF5FF; 
 	color: #333;
 	text-align: center; 
 	padding: 30px 0 300px; 
 	font-family: 'Montserrat', sans-serif;	
 }
-
+.me{
+	border-radius: 50%;
+ 	transition: border-radius 0.5s ease 0s;
+}
+.me:hover{
+	border-radius: 5%;
+	transition: border-radius 0.5s ease 0s;
+}
+.about{
+	text-align: left;
+	font-size: 25px;
+	font-family: 'Lato', sans-serif;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
 #skills{
 	background-color: #fff;
 	color: #333;
@@ -151,6 +163,7 @@ h2{
 	padding: 30px 0 100px; 
 	font-family: 'Montserrat', sans-serif;	
 }
+
 #portfolio{
 	/*background-color: #fff;*/
 	color: #333;
@@ -165,6 +178,7 @@ h2{
 	padding: 30px 0 70px; 
 	font-family: 'Montserrat', sans-serif;	
 }
+/*cintact button*/
 .custom-btn {
 	width: 200px;
 	height: 200px;
@@ -196,7 +210,7 @@ h2{
 .btn-3 a{
 	color: #fff;
 	text-decoration: none;
-	font-size: 200%;
+	font-size: 180%;
 }
 .btn-3 span {
 	position: relative;
@@ -256,40 +270,4 @@ h2{
 }
 .btn-3 span:hover:after {
 	width: 100%;
-}
-.me{
-	border-radius: 50%;
-	float: left;
-	margin-left: 300px;
- 	transition: border-radius 0.5s ease 0s;
-}
-.me:hover{
-	border-radius: 5%;
-	transition: border-radius 0.5s ease 0s;
-}
-.about{
-
-	text-align: left;
-	float: left;
-	font-size: 25px;
-	margin-left: 100px; 
-	font-family: 'Lato', sans-serif;
-}
-.clearfix::after{
-	content: "";
-	display: block;
-	clear: both;
-}
-.mini_top, .mini_icon, .mini_menu{
-	display: none;
-}
-
-@media screen and (max-width: 700px) {
-	.top, .myname, .menu{display: none;}
-	.mini_top, .mini_icon, .mini_menu{
-		display: block;
-	}
-	.mini_top{position: fixed;}
-	.name{font-size: 35px;}
-	.name1{font-size: 70px;}
 }
