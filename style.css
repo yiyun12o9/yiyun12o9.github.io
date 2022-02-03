@@ -58,7 +58,6 @@ header{
 	font-size: 250%;
 	color: #333;
 	font-family: 'Caveat', sans-serif;
-	text-decoration: none; /*文字樣式*/
 }
 
 .menu{
@@ -132,7 +131,7 @@ header{
 }
 
 #aboutme{
-	background-color: #ECF5FF; 
+	background-color: #F0F7FF; 
 	color: #333;
 	text-align: center; 
 	padding: 30px 0 300px; 
@@ -148,31 +147,33 @@ header{
 }
 .about{
 	text-align: left;
-	font-size: 25px;
+	font-size: 24px;
 	font-family: 'Lato', sans-serif;
 }
-.clearfix::after{
-	content: "";
-	display: block;
-	clear: both;
-}
 #skills{
-	background-color: #fff;
+	background-color: #F0F7FF;
 	color: #333;
 	text-align: center; 
 	padding: 30px 0 100px; 
 	font-family: 'Montserrat', sans-serif;	
 }
-
 #portfolio{
-	/*background-color: #fff;*/
+	background-color: #F0F7FF;
 	color: #333;
 	text-align: center; 
 	padding: 30px 0 200px; 
 	font-family: 'Montserrat', sans-serif;	
 }
+.pic{
+	transform: scale(1,1);
+	transition: scale 0.5s ease 0s;
+}
+.pic:hover{
+	transform: scale(1.1,1.1);
+	overflow: hidden;
+}
 #contact{
-	/*background-color: #84b4b1;*/
+	background-color: #F0F7FF;
 	color: #333;
 	text-align: center; 
 	padding: 30px 0 70px; 
@@ -209,7 +210,6 @@ header{
 }
 .btn-3 a{
 	color: #fff;
-	text-decoration: none;
 	font-size: 180%;
 }
 .btn-3 span {
