@@ -32,7 +32,7 @@ h2{
 }
 header{
 	background-attachment: fixed; /*背景不滾動*/
-	background-image: url(img/bg.jpg); 
+	background-image: url(img/bg.jpg);
 	background-size: cover; 
 	color: #333;
 	text-align: center; /*對齊方式*/
@@ -131,18 +131,22 @@ header{
 }
 
 #aboutme{
-	background-color: #F0F7FF; 
+	background-color: #fff; 
 	color: #333;
 	text-align: center; 
 	padding: 30px 0 300px; 
 	font-family: 'Montserrat', sans-serif;	
+}
+.forabout{
+	display: flex;
+	align-items:center;
 }
 .me{
 	border-radius: 50%;
  	transition: border-radius 0.5s ease 0s;
 }
 .me:hover{
-	border-radius: 5%;
+	border-radius: 10%;
 	transition: border-radius 0.5s ease 0s;
 }
 .about{
@@ -151,17 +155,19 @@ header{
 	font-family: 'Lato', sans-serif;
 }
 #skills{
-	background-color: #F0F7FF;
+	background-image: linear-gradient(to right bottom, rgba(150, 202, 202, 0.8), rgba(210, 233, 233, 0.8)), url(img/bg1.jpg);
+	background-color: #fff;
+	background-size: cover; 
 	color: #333;
 	text-align: center; 
-	padding: 30px 0 100px; 
+	padding: 30px 0 170px; 
 	font-family: 'Montserrat', sans-serif;	
 }
 #portfolio{
-	background-color: #F0F7FF;
+	background-color: #fff;
 	color: #333;
 	text-align: center; 
-	padding: 30px 0 200px; 
+	padding: 30px 0 80px; 
 	font-family: 'Montserrat', sans-serif;	
 }
 .pic{
@@ -173,10 +179,10 @@ header{
 	overflow: hidden;
 }
 #contact{
-	background-color: #F0F7FF;
+	background-color: #fff;
 	color: #333;
 	text-align: center; 
-	padding: 30px 0 70px; 
+	padding: 30px 0 80px; 
 	font-family: 'Montserrat', sans-serif;	
 }
 /*cintact button*/
@@ -200,7 +206,7 @@ header{
 }
 .btn-3 {
 	background: rgb(0,172,238);
-	background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%); /*漸層色*/
+	background: linear-gradient(0deg, rgba(113, 183, 183, 1) 0%, rgba(197, 226, 226, 1) 100%); /*漸層色*/
 	margin: 50px 15px;
 	width: 200px;
 	height: 200px;
@@ -224,7 +230,7 @@ header{
 	content: "";
 	right: 0;
 	top: 0;
-	background: rgba(2,126,251,1);
+	background: rgba(113, 183, 183,1);
 	transition: all 0.3s ease;
 }
 .btn-3:before {
@@ -246,7 +252,7 @@ header{
 	width: 100%;
 }
 .btn-3 span:hover{
-	color: rgba(2,126,251,1);
+	color: rgba(113, 183, 183,1);
 }
 .btn-3 span:before,
 .btn-3 span:after {
@@ -254,7 +260,7 @@ header{
 	content: "";
 	left: 0;
 	bottom: 0;
-	background: rgba(2,126,251,1);
+	background: rgba(113, 183, 183,1);
 	transition: all 0.3s ease;
 }
 .btn-3 span:before {
