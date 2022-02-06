@@ -40,13 +40,7 @@ header{
 	font-family: 'Montserrat', sans-serif;	
 	overflow: hidden;
 }
-.top{
-	position: fixed;
-	left: 0;
-	right: 0;
-	height: 70px;
-	z-index: 2100;
-}
+
 .myname{
 	border: none;
 	background: none;
@@ -59,12 +53,27 @@ header{
 	color: #333;
 	font-family: 'Caveat', sans-serif;
 }
-
+.desktop_menu{
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 70px;
+	z-index: 2100;
+	text-align: center;
+	display: block;
+}
+.mobile_menu{
+	position: fixed;
+	text-align: right;
+	display: none;
+}
 .menu{
+	display: flex;
 	float: right;
 	line-height: 51px;
 }
 .menu li{
+	flex: none;
 	position: relative; 
 	display: table-cell; 
 	padding: 0;
@@ -129,12 +138,11 @@ header{
 		transform: translate(0px);
 	}
 }
-
 #aboutme{
 	background-color: #fff; 
 	color: #333;
 	text-align: center; 
-	padding: 30px 0 300px; 
+	padding: 30px 0 320px; 
 	font-family: 'Montserrat', sans-serif;	
 }
 .forabout{
@@ -155,21 +163,37 @@ header{
 	font-family: 'Lato', sans-serif;
 }
 #skills{
-	background-image: linear-gradient(to right bottom, rgba(150, 202, 202, 0.8), rgba(210, 233, 233, 0.8)), url(img/bg1.jpg);
+	background-image: linear-gradient(to right bottom, rgba(150, 202, 202, 0.8), rgba(210, 233, 233, 0.8)), url(img/laptop.jpg);
 	background-color: #fff;
 	background-size: cover; 
 	color: #333;
 	text-align: center; 
-	padding: 30px 0 170px; 
+	padding: 30px 0 230px; 
 	font-family: 'Montserrat', sans-serif;	
 }
-#portfolio{
+.list{
+	display: flex;
+	justify-content: center;
+	margin-top: 110px;
+}
+.mycard{
+	flex: none;
+	width: 280px;
+	margin: 15px;
 	background-color: #fff;
-	color: #333;
-	text-align: center; 
-	padding: 30px 0 80px; 
-	font-family: 'Montserrat', sans-serif;	
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
+.header{
+	padding: 10px;
+	font-size: 18px;
+	background-color: #E8FFF5;
+	border-radius: 10px 10px 0 0;
+}
+.text{
+	padding: 28px;
+}
+
 .pic{
 	transform: scale(1,1);
 	transition: scale 0.5s ease 0s;
@@ -177,6 +201,13 @@ header{
 .pic:hover{
 	transform: scale(1.1,1.1);
 	overflow: hidden;
+}
+#portfolio{
+	background-color: #fff;
+	color: #333;
+	text-align: center; 
+	padding: 30px 0 80px; 
+	font-family: 'Montserrat', sans-serif;	
 }
 #contact{
 	background-color: #fff;
@@ -276,4 +307,27 @@ header{
 }
 .btn-3 span:hover:after {
 	width: 100%;
+}
+@media (max-width:1250px){
+	.list{
+		flex-wrap: wrap;
+	}
+	.mycard{
+		width: 45%;
+	}
+}
+@media (max-width:600px){
+	.desktop_menu{
+		display: none;
+	}
+	.mobile_menu{
+		display: block;
+		right: 0;
+	}
+	.mycard{
+		width: 90%;
+	}
+	.menu{
+		width: 90%;
+	}
 }
