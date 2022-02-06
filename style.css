@@ -163,6 +163,7 @@ header{
 	font-family: 'Lato', sans-serif;
 }
 #skills{
+	background-attachment: fixed;
 	background-image: linear-gradient(to right bottom, rgba(150, 202, 202, 0.8), rgba(210, 233, 233, 0.8)), url(img/laptop.jpg);
 	background-color: #fff;
 	background-size: cover; 
