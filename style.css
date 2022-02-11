@@ -147,9 +147,10 @@ header{
 }
 .forabout{
 	display: flex;
-	align-items:center;
+	justify-content: center;
 }
 .me{
+	flex: none;
 	border-radius: 50%;
  	transition: border-radius 0.5s ease 0s;
 }
@@ -158,8 +159,9 @@ header{
 	transition: border-radius 0.5s ease 0s;
 }
 .about{
+	flex: none;
 	text-align: left;
-	font-size: 24px;
+	font-size: 23px;
 	font-family: 'Lato', sans-serif;
 }
 #skills{
@@ -179,8 +181,8 @@ header{
 }
 .mycard{
 	flex: none;
-	width: 280px;
-	margin: 15px;
+	width: 250px;
+	margin: 10px;
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
@@ -200,7 +202,7 @@ header{
 	transition: scale 0.5s ease 0s;
 }
 .pic:hover{
-	transform: scale(1.1,1.1);
+	transform: scale(1.05,1.05);
 	overflow: hidden;
 }
 #portfolio{
@@ -248,7 +250,7 @@ header{
 }
 .btn-3 a{
 	color: #fff;
-	font-size: 180%;
+	font-size: 170%;
 }
 .btn-3 span {
 	position: relative;
@@ -316,6 +318,30 @@ header{
 	.mycard{
 		width: 45%;
 	}
+	.name{
+		font-size: 3rem;
+	}
+	.name1{
+		font-size: 5rem;
+	}
+	.btn-3 {
+		width: 160px;
+		height: 160px;
+		line-height: 160px;
+	}
+	.btn-3 a{
+		font-size: 125%;
+	}
+	.bi{
+		width: 25px;
+		height: 25px;
+	}
+}
+@media (max-width:1000px){
+	.about{
+		text-align: center;
+		float: bottom;
+	}
 }
 @media (max-width:600px){
 	.desktop_menu{
@@ -326,9 +352,27 @@ header{
 		right: 0;
 	}
 	.mycard{
-		width: 90%;
+		width: 100%;
+	}
+	.name{
+		font-size: 2.5rem;
+	}
+	.name1{
+		font-size: 4rem;
 	}
 	.menu{
 		width: 90%;
+	}
+	.btn-3 {
+		width: 120px;
+		height: 120px;
+		line-height: 120px;
+	}
+	.btn-3 a{
+		font-size: 90%;
+	}
+		.bi{
+		width: 20px;
+		height: 20px;
 	}
 }
