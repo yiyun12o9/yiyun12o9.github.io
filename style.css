@@ -42,10 +42,12 @@ header{
 }
 
 .myname{
+	position: fixed;
 	border: none;
 	background: none;
 	float: left;
 	margin: 0 0 0 20px; /*上、右邊、下、左邊*/
+	z-index: 2101;
 }
 .myname a{
 	display: block;
@@ -66,6 +68,7 @@ header{
 	position: fixed;
 	text-align: right;
 	display: none;
+	z-index: 2100;
 }
 .menu{
 	display: flex;
@@ -138,6 +141,12 @@ header{
 		transform: translate(0px);
 	}
 }
+.header{
+	padding: 10px;
+	font-size: 18px;
+	background-color: #E8FFF5;
+	border-radius: 10px 10px 0 0;
+}
 #aboutme{
 	background-color: #fff; 
 	color: #333;
@@ -159,10 +168,12 @@ header{
 	transition: border-radius 0.5s ease 0s;
 }
 .about{
-	flex: none;
-	text-align: left;
+	display: flex;
+	line-height: 40px;
+	text-align: justify;
 	font-size: 23px;
 	font-family: 'Lato', sans-serif;
+	margin: 40px;
 }
 #skills{
 	background-attachment: fixed;
@@ -178,6 +189,7 @@ header{
 	display: flex;
 	justify-content: center;
 	margin-top: 110px;
+	overflow: hidden;
 }
 .mycard{
 	flex: none;
@@ -187,22 +199,15 @@ header{
 	border-radius: 10px;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
-.header{
-	padding: 10px;
-	font-size: 18px;
-	background-color: #E8FFF5;
-	border-radius: 10px 10px 0 0;
-}
 .text{
 	padding: 28px;
 }
-
-.pic{
-	transform: scale(1,1);
-	transition: scale 0.5s ease 0s;
+.pic1{
+	transform: translate(0,0);
+	transition: transform 0.3s ease 0s;
 }
-.pic:hover{
-	transform: scale(1.05,1.05);
+.pic1:hover{
+	transform: translate(0,-10px);
 	overflow: hidden;
 }
 #portfolio{
@@ -211,6 +216,14 @@ header{
 	text-align: center; 
 	padding: 30px 0 80px; 
 	font-family: 'Montserrat', sans-serif;	
+}
+.pic{
+	transform: scale(1,1);
+	transition: scale 0.5s ease 0s;
+}
+.pic:hover{
+	transform: scale(1.05,1.05);
+	overflow: hidden;
 }
 #contact{
 	background-color: #fff;
@@ -312,6 +325,13 @@ header{
 	width: 100%;
 }
 @media (max-width:1250px){
+	.desktop_menu{
+		display: none;
+	}
+	.mobile_menu{
+		display: block;
+		right: 0;
+	}
 	.list{
 		flex-wrap: wrap;
 	}
@@ -338,19 +358,19 @@ header{
 	}
 }
 @media (max-width:1000px){
+	.me:hover{
+		border-radius: 50%;
+		box-shadow: 2px 20px 30px rgba(0,0,0,0.5);
+	}
+	.forabout{
+		display: block;
+	}
 	.about{
-		text-align: center;
-		float: bottom;
+		font-size: 21px;
 	}
 }
-@media (max-width:600px){
-	.desktop_menu{
-		display: none;
-	}
-	.mobile_menu{
-		display: block;
-		right: 0;
-	}
+@media (max-width:640px){
+
 	.mycard{
 		width: 100%;
 	}
