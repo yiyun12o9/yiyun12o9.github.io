@@ -40,13 +40,12 @@ header{
 	font-family: 'Montserrat', sans-serif;	
 	overflow: hidden;
 }
-
 .myname{
 	position: fixed;
 	border: none;
 	background: none;
-	float: left;
-	margin: 0 0 0 20px; /*上、右邊、下、左邊*/
+	text-align: left;
+	margin: 0 0 0 10px; /*上、右邊、下、左邊*/
 	z-index: 2101;
 }
 .myname a{
@@ -63,12 +62,52 @@ header{
 	z-index: 2100;
 	text-align: center;
 	display: block;
+	margin: 10px 10px 0 0; /*上、右邊、下、左邊*/
 }
 .mobile_menu{
 	position: fixed;
 	text-align: right;
+	margin: 10px 13px 0 0; /*上、右邊、下、左邊*/
 	display: none;
 	z-index: 2100;
+}
+.ham_icon{
+	cursor: pointer;
+}
+.menu1{
+	line-height: 60px;
+	font-size: 20px;
+	text-align: center;
+	border: solid 1px;
+	padding: 30px;
+	background-color: #fff;
+}
+.menu1 li{
+	position: relative;  
+	display: block;
+	padding: 0;
+}
+.menu1 a{
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	font-family: 'Montserrat', sans-serif;	
+}
+.menu1 a:after{
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #0066CC;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+.menu1 a:hover:after{
+	width: 100%; 
+	left: 0;
 }
 .menu{
 	display: flex;
@@ -141,12 +180,6 @@ header{
 		transform: translate(0px);
 	}
 }
-.header{
-	padding: 10px;
-	font-size: 18px;
-	background-color: #E8FFF5;
-	border-radius: 10px 10px 0 0;
-}
 #aboutme{
 	background-color: #fff; 
 	color: #333;
@@ -198,6 +231,12 @@ header{
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+.header{
+	padding: 10px;
+	font-size: 18px;
+	background-color: #E8FFF5;
+	border-radius: 10px 10px 0 0;
 }
 .text{
 	padding: 28px;
@@ -325,12 +364,8 @@ header{
 	width: 100%;
 }
 @media (max-width:1250px){
-	.desktop_menu{
+	.hide{
 		display: none;
-	}
-	.mobile_menu{
-		display: block;
-		right: 0;
 	}
 	.list{
 		flex-wrap: wrap;
@@ -339,10 +374,10 @@ header{
 		width: 45%;
 	}
 	.name{
-		font-size: 3rem;
+		font-size: 3.2rem;
 	}
 	.name1{
-		font-size: 5rem;
+		font-size: 5.7rem;
 	}
 	.btn-3 {
 		width: 160px;
@@ -358,6 +393,13 @@ header{
 	}
 }
 @media (max-width:1000px){
+	.desktop_menu{
+		display: none;
+	}
+	.mobile_menu{
+		display: block;
+		right: 0;
+	}
 	.me:hover{
 		border-radius: 50%;
 		box-shadow: 2px 20px 30px rgba(0,0,0,0.5);
@@ -369,8 +411,23 @@ header{
 		font-size: 21px;
 	}
 }
+@media (max-width:880px){
+	header{
+		background-image: url(img/bg2.jpg);
+		background-attachment: local;
+	}
+	#skills{
+		background-image: linear-gradient(to right bottom, rgba(150, 202, 202, 0.8), rgba(210, 233, 233, 0.8)), url(img/laptop2.jpg);
+		background-attachment: local;
+	}
+}
 @media (max-width:640px){
-
+	header{
+		background-image: url(img/bg1.jpg);
+	}
+	#skills{
+		background-image: linear-gradient(to right bottom, rgba(150, 202, 202, 0.8), rgba(210, 233, 233, 0.8)), url(img/laptop1.jpg);
+	}
 	.mycard{
 		width: 100%;
 	}
@@ -380,6 +437,9 @@ header{
 	.name1{
 		font-size: 4rem;
 	}
+	.myname a{
+		font-size: 210%;
+	}
 	.menu{
 		width: 90%;
 	}
@@ -387,12 +447,40 @@ header{
 		width: 120px;
 		height: 120px;
 		line-height: 120px;
+		margin: 50px 5px;
 	}
 	.btn-3 a{
 		font-size: 90%;
 	}
-		.bi{
+	.bi{
 		width: 20px;
 		height: 20px;
+	}
+}
+@media (max-width:460px){
+	.name{
+		font-size: 1.9rem;
+	}
+	.name1{
+		font-size: 3.2rem;
+	}
+	.me{
+		width: 250px;
+		height: 250px;
+	}
+	.about{
+		font-size: 18px;
+	}
+	.btn-3 {
+		width: 85px;
+		height: 85px;
+		line-height: 85px;
+	}
+	.btn-3 a{
+		font-size: 75%;
+	}
+	.bi{
+		width: 15px;
+		height: 15px;
 	}
 }
