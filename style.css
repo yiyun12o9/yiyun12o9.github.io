@@ -31,12 +31,13 @@ h2{
 }
 .title{
 	font-size: 1.2em;
-	font-weight: 550;
+	font-weight: 540;
 }
 .clip{
-	background: linear-gradient(0deg, rgba(60, 119, 119, 1) 0%, rgba(241, 248, 248, 1) 100%); /*漸層色*/
+	background-image: linear-gradient(to right, rgb(210, 233, 233), rgb(0, 87, 87)); /*漸層色*/
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	display: inline-block;
 }
 header{
 	background-attachment: fixed; /*背景不滾動*/
@@ -195,11 +196,20 @@ header{
 	padding: 30px 0 320px; 
 	font-family: 'Montserrat', sans-serif;	
 }
+.container1{
+	width: 100%;
+    padding-left: 125px;
+	padding-right: 125px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .forabout{
 	display: flex;
 	justify-content: center;
 }
 .me{
+	width: 30%;
+	height: 30%;
 	flex: none;
 	border-radius: 50%;
  	transition: border-radius 0.5s ease 0s;
@@ -384,7 +394,11 @@ header{
 	.list{
 		flex-wrap: wrap;
 	}
-	.mycard{
+	.container1{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+		.mycard{
 		width: 45%;
 	}
 	.name{
@@ -392,6 +406,10 @@ header{
 	}
 	.name1{
 		font-size: 5.7rem;
+	}
+	.me{
+		width: 40%;
+		height: 40%;
 	}
 	.btn-3 {
 		width: 160px;
@@ -414,13 +432,7 @@ header{
 		display: block;
 		right: 0;
 	}
-	.me:hover{
-		border-radius: 50%;
-		box-shadow: 2px 20px 30px rgba(0,0,0,0.5);
-	}
-	.forabout{
-		display: block;
-	}
+
 	.about{
 		font-size: 21px;
 	}
@@ -433,6 +445,17 @@ header{
 	#skills{
 		background-image: linear-gradient(to right bottom, rgba(150, 202, 202, 0.8), rgba(210, 233, 233, 0.8)), url(img/laptop2.jpg);
 		background-attachment: local;
+	}
+	.me{
+		width: 80%;
+		height: 80%;
+	}
+	.me:hover{
+		border-radius: 50%;
+		box-shadow: 2px 20px 30px rgba(0,0,0,0.5);
+	}
+	.forabout{
+		display: block;
 	}
 }
 @media (max-width:640px){
@@ -478,10 +501,7 @@ header{
 	.name1{
 		font-size: 3.2rem;
 	}
-	.me{
-		width: 250px;
-		height: 250px;
-	}
+
 	.about{
 		font-size: 18px;
 	}
