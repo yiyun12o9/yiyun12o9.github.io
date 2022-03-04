@@ -40,14 +40,15 @@ h2{
 	display: inline-block;
 }
 header{
-	background-attachment: fixed; /*背景不滾動*/
 	background-image: url(img/bg.jpg);
 	background-size: cover; 
+	background-position: center bottom;
 	color: #333;
 	text-align: center; /*對齊方式*/
 	padding: 30px 0 200px; /*框線內側邊界 上 左右 下*/
 	font-family: 'Montserrat', sans-serif;	
 	overflow: hidden;
+	clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 85%);
 }
 .myname{
 	position: fixed;
@@ -227,20 +228,22 @@ header{
 	margin: 40px;
 }
 #skills{
-	background-attachment: fixed;
 	background-image: linear-gradient(to right bottom, rgba(150, 202, 202, 0.8), rgba(210, 233, 233, 0.8)), url(img/laptop.jpg);
 	background-color: #fff;
-	background-size: cover; 
+	background-size: cover;
+	transform: skewY(6deg);
+	background-position: center bottom;	
 	color: #333;
 	text-align: center; 
 	padding: 30px 0 230px; 
-	font-family: 'Montserrat', sans-serif;	
+	font-family: 'Montserrat', sans-serif;
 }
 .list{
 	display: flex;
 	justify-content: center;
 	margin-top: 135px;
 	overflow: hidden;
+	transform: skewY(-6deg);
 }
 .mycard{
 	flex: none;
@@ -275,7 +278,6 @@ header{
 	font-family: 'Montserrat', sans-serif;	
 }
 .carousel{
-
 	margin: 0 auto;
 	width: 85%;
 	height: 85%;
@@ -398,7 +400,7 @@ header{
 		padding-left: 0px;
 		padding-right: 0px;
 	}
-		.mycard{
+	.mycard{
 		width: 45%;
 	}
 	.name{
@@ -438,14 +440,6 @@ header{
 	}
 }
 @media (max-width:880px){
-	header{
-		background-image: url(img/bg2.jpg);
-		background-attachment: local;
-	}
-	#skills{
-		background-image: linear-gradient(to right bottom, rgba(150, 202, 202, 0.8), rgba(210, 233, 233, 0.8)), url(img/laptop2.jpg);
-		background-attachment: local;
-	}
 	.me{
 		width: 80%;
 		height: 80%;
@@ -459,12 +453,6 @@ header{
 	}
 }
 @media (max-width:640px){
-	header{
-		background-image: url(img/bg1.jpg);
-	}
-	#skills{
-		background-image: linear-gradient(to right bottom, rgba(150, 202, 202, 0.8), rgba(210, 233, 233, 0.8)), url(img/laptop1.jpg);
-	}
 	.mycard{
 		width: 100%;
 	}
