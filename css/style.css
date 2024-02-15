@@ -30,7 +30,7 @@ h2{
 	padding: 20px;
 }
 .title{
-	font-size: 1.2em;
+	font-size: 1.7em;
 	font-weight: 540;
 }
 .clip{
@@ -40,7 +40,7 @@ h2{
 	display: inline-block;
 }
 header{
-	background-image: url(img/bg.jpg);
+	background-image: url("../images/bg.jpg");
 	background-size: cover; 
 	background-position: center bottom;
 	color: #333;
@@ -59,6 +59,7 @@ header{
 	z-index: 2101;
 }
 .myname a{
+	text-decoration: none;
 	display: block;
 	font-size: 250%;
 	color: #333;
@@ -99,6 +100,7 @@ header{
 	padding: 0;
 }
 .menu1 a{
+	text-decoration: none;
 	color: #333;
 	text-transform: uppercase;
 	letter-spacing: 0.15em;
@@ -132,6 +134,7 @@ header{
 	padding: 0;
 }
 .menu a{
+	text-decoration: none;
 	color: #333;
 	text-transform: uppercase;
 	letter-spacing: 0.15em;
@@ -199,7 +202,7 @@ header{
 	font-family: 'Montserrat', sans-serif;	
 }
 .container1{
-	width: 100%;
+	/* width: 100%; */
     padding-left: 125px;
 	padding-right: 125px;
     margin-right: auto;
@@ -229,7 +232,7 @@ header{
 	margin: 40px;
 }
 #skills{
-	background-image: linear-gradient(to right bottom, rgba(150, 202, 202, 0.8), rgba(210, 233, 233, 0.8)), url(img/laptop.jpg);
+	background-image: linear-gradient(to right bottom, rgba(150, 202, 202, 0.8), rgba(210, 233, 233, 0.8)), url("../images/laptop.jpg");
 	background-color: #fff;
 	background-size: cover;
 	transform: skewY(4deg);
@@ -278,7 +281,110 @@ header{
 	padding: 30px 0 80px; 
 	font-family: 'Montserrat', sans-serif;	
 }
-.carousel{
+
+.slideshow {
+	position: relative;
+	transition: 2s;
+	user-select: none;
+	margin: 0 auto;
+    width: 65%;
+    height: 65%;
+  }
+
+.forimg{
+	transition: 0.5s;
+}
+.forimg:hover{
+	transition: 0.5s;
+	transform:scale(1.1);
+}
+  
+  .slide__item {
+	display: none;
+	position: relative;
+	overflow: hidden;
+  }
+  .slide__pagenumber {
+	padding: 10px;
+	border-radius: 80% 30% / 80% 50%;
+	background: rgba(0, 0, 0, 0.6);
+	color: white;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+  }
+  .slide__content {
+	position: absolute;
+	color: white;
+	background: rgba(0, 0, 0, 0.5);
+	bottom: 0;
+	padding: 0 10px;
+	border-radius: 5px;
+  }
+  .slide__arrow {
+	padding: 20px;
+	position: absolute;
+	line-height: 20px;
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+  }
+  .slide__arrow:hover {
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	transition: 0.6 ease;
+  }
+  .slide__arrow--prev {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+  }
+  .slide__arrow--next {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+  }
+  .slide__dot {
+	padding: 5px 5px;
+	display: flex;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  
+  .dot {
+	width: 15px;
+	height: 15px;
+	margin: 0 5px;
+	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	background: rgba(255, 255, 255, 0.3);
+	box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.3);
+  }
+  
+  .active,
+  .dot:hover {
+	background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .fades {
+	animation: 1.5s fades;
+  }
+  @keyframes fades {
+	from {
+	  opacity: 0.4;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
+
+/* .carousel{
 	margin: 0 auto;
 	width: 85%;
 	height: 85%;
@@ -290,7 +396,7 @@ header{
 .pic:hover{
 	transform: scale(1.05,1.05);
 	overflow: hidden;
-}
+} */
 #contact{
 	background-color: #fff;
 	color: #333;
@@ -299,6 +405,11 @@ header{
 	font-family: 'Montserrat', sans-serif;	
 }
 /*cintact button*/
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
 .custom-btn {
 	width: 200px;
 	height: 200px;
@@ -328,6 +439,7 @@ header{
 	border: none;
 }
 .btn-3 a{
+	text-decoration: none;
 	color: #fff;
 	font-size: 170%;
 }
@@ -389,6 +501,35 @@ header{
 }
 .btn-3 span:hover:after {
 	width: 100%;
+}
+
+/* TOP按鈕 */
+.back-top {
+	z-index: 99999;
+  position: fixed;
+	bottom: 10px;
+   right: 10px;
+   cursor: pointer;
+	opacity: 1;
+	filter: Alpha(opacity=50);
+	width: 50px;
+	height: 50px;
+   background:#84C1FF;
+	background-size: 24px 24px;
+	color:#FFFFFF;
+	border-radius:50%;
+	transform: translateY(0%);
+	transition: all 0.2s linear;
+	text-align:center;
+	line-height:50px;
+}
+.back-top:hover {
+  background-color:#D9B3B3;
+	 transform:scale(1.2);
+}
+.back-top.hide {
+	opacity: 0;
+	transform: translateY(150%);
 }
 @media (max-width:1250px){
 	.hide{

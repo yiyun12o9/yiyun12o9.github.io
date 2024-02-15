@@ -1,117 +1,186 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-	<head>
-		<meta charset="UTF-8">
-		<title>About YiYun</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-		<link rel="stylesheet" href="./style.css" media="all"> <!--載入CSS檔-->
-		<script  src="./script.js"></script>
-		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'><!--字體-->
-		<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'><!--字體-->
-		<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet"><!--字體-->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-	</head>
-	<body>
-		<div class="myname">
-			<a href="#" class="text-decoration-none text-reset">YiYunLi</a>
+
+<head>
+	<meta charset="UTF-8">
+	<title>About YiYun</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="./css/style.css" media="all"> <!--載入CSS檔-->
+	
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'><!--字體-->
+	<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'><!--字體-->
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet"><!--字體-->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+		integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script> -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script> -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+		integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+		crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+	<div class="myname">
+		<a href="#thetop">YiYunLi</a>
+	</div>
+	<div class="desktop_menu">
+		<ul class="menu">
+			<li><a href="#aboutme">About</a>
+			<li><a href="#skills">Skills</a>
+			<li><a href="#portfolio">Portfolio</a>
+			<li><a href="#contact">Contact</a>
+		</ul>
+	</div>
+	<div class="mobile_menu">
+		<div class="ham_icon" onclick="toggleMenu();">
+			<img src="images/hamburger_icon.png" width="35" height="35">
 		</div>
-		<div class="desktop_menu">	
-			<ul class="menu">
-				<li><a href="#aboutme" class="text-decoration-none text-reset">About</a>
-				<li><a href="#skills" class="text-decoration-none text-reset">Skills</a>
-				<li><a href="#portfolio" class="text-decoration-none text-reset">Portfolio</a>
-				<li><a href="#contact" class="text-decoration-none text-reset">Contact</a>
+		<div id="menu" class="hide">
+			<ul class="menu1">
+				<li><a href="#aboutme">About</a>
+				<li><a href="#skills">Skills</a>
+				<li><a href="#portfolio">Portfolio</a>
+				<li><a href="#contact">Contact</a>
 			</ul>
 		</div>
-		<div class="mobile_menu">
-			<div class="ham_icon" onclick="toggleMenu();">
-				<img src="img/hamburger_icon.png" width="35" height="35">
-			</div>
-			<div  id="menu" class="hide">
-				<ul class="menu1">
-					<li><a href="#aboutme" class="text-decoration-none text-reset">About</a>
-					<li><a href="#skills" class="text-decoration-none text-reset">Skills</a>
-					<li><a href="#portfolio" class="text-decoration-none text-reset">Portfolio</a>
-					<li><a href="#contact" class="text-decoration-none text-reset">Contact</a>
-				</ul>
-			</div>
-		</div>
-		<header class="pt-5">
-			<h1><span class="name mb-4">Hello~I'm</span><span class="name1 mb-5">Yi Yun</span></h1>
-		</header>
-		<section id="aboutme">
+	</div>
+	<header class="pt-5" id="thetop">
+		<h1><span class="name mb-4">Hello~I'm</span><span class="name1 mb-5">Yi Yun</span></h1>
+	</header>
+	<section id="aboutme">
 		<h2 class="clip"><span class="title">about me</span></h2>
 		<div class="container1">
 			<div class="forabout mx-4">
-				<img src="img/yiyun.jpg" alt="頭貼" class="me">
-				<div  class="about">
-					<p>嗨！我是李亦芸，畢業於銘傳大學資訊傳播工程學系，比起程式開發，更熱愛設計相關事務，對於視覺美感有自己的堅持，圖文排版一定要好看，顏色配置一定要舒服。<br>在學期間曾接觸網頁設計相關課程，建立基礎網頁製作的技術及程式能力，也因此發現自己對網頁設計的熱愛，後來也選修人機界面設計課程，學習更多關於UI/UX的觀念，同時也利用Youtube教學頻道自學相關課程，保持熱愛學習的態度，持續增進自己的專業能力。<br>	在畢業專題中我負責各項美術設計，包括介面設計、平面海報、場景建模、顏色配置等設計，設計過程也不斷與負責寫程式的組員討論，這樣的設計邏輯是否可以用程式撰寫出來，在不斷的與組員互動下，也培養了我與人溝通的能力。</p>
+				<img src="images/yiyun.jpg" alt="頭貼" class="me">
+				<div class="about">
+					<p>嗨！我是李亦芸，畢業於銘傳大學資訊傳播工程學系，比起程式開發，更熱愛設計相關事務，對於視覺美感有自己的堅持，圖文排版一定要好看，顏色配置一定要舒服。<br>在學期間曾接觸網頁設計相關課程，建立基礎網頁製作的技術及程式能力，也因此發現自己對網頁設計的熱愛，後來也選修人機界面設計課程，學習更多關於UI/UX的觀念，同時也利用Youtube教學頻道自學相關課程，保持熱愛學習的態度，持續增進自己的專業能力。<br>
+						在畢業專題中我負責各項美術設計，包括介面設計、平面海報、場景建模、顏色配置等設計，設計過程也不斷與負責寫程式的組員討論，這樣的設計邏輯是否可以用程式撰寫出來，在不斷的與組員互動下，也培養了我與人溝通的能力。
+					</p>
 				</div>
 			</div>
 		</div>
-		</section>
-		<section id="skills">
-			<h2 style="color:rgb(0, 87, 87);transform: skewY(-4deg);"><span class="title">skills</span></h2>
-			<div class="list">
-				<div class="pic1 mycard">
-					<div class="header">文件處理</div>
-					<div class="text">
-						<ul>
-							<li>Word</li>
-							<li>PowerPoint</li>
-						</ul>
-					</div>
-				</div>
-				<div class="pic1 mycard">
-					<div class="header">程式設計</div>
-					<div class="text">
-						<ul>
-							<li>C</li>
-							<li>C#</li>
-							<li>HTML5</li>
-							<li>CSS3</li>
-							<li>Processing</li>
-							<li>Unity</li>
-						</ul>
-					</div>
-				</div>
-				<div class="pic1 mycard">
-					<div class="header">2D/3D設計</div>
-					<div class="text">				
-						<ul>
-							<li>Maya</li>
-							<li>Adobe Animate</li>
-							<li>Adobe Illustrator</li>
-							<li>Figma</li>
-						</ul>
-					</div>
-				</div>
-				<div class="pic1 mycard">
-					<div class="header">影片剪輯</div>
-					<div class="text">
-						<ul>
-							<li>Adobe Premiere</li>
-						</ul>
-					</div>
-				</div>
-				<div class="pic1 mycard">
-					<div class="header">其他工具</div>
-					<div class="text">
-						<ul>
-							<li>Git</li>
-							<li>Github</li>
-						</ul>
-					</div>
+	</section>
+	<section id="skills">
+		<h2 style="color:rgb(0, 87, 87);transform: skewY(-4deg);"><span class="title">skills</span></h2>
+		<div class="list">
+			<div class="pic1 mycard">
+				<div class="header">文件處理</div>
+				<div class="text">
+					<ul>
+						<li>Word</li>
+						<li>PowerPoint</li>
+					</ul>
 				</div>
 			</div>
-		</section>
-		<section id="portfolio">
-			<h2 class="clip"><span class="title">portfolio</span></h2>
-			<div class="container">
-				<div id="carouselExampleFade" class="carousel slide carousel-fade shadow" data-ride="carousel">
+			<div class="pic1 mycard">
+				<div class="header">程式設計</div>
+				<div class="text">
+					<ul>
+						<li>HTML5</li>
+						<li>CSS3</li>
+					</ul>
+				</div>
+			</div>
+			<div class="pic1 mycard">
+				<div class="header">2D/3D設計</div>
+				<div class="text">
+					<ul>
+						<li>Maya</li>
+						<li>Adobe Animate</li>
+						<li>Adobe Illustrator</li>
+						<li>Figma</li>
+					</ul>
+				</div>
+			</div>
+			<div class="pic1 mycard">
+				<div class="header">影片剪輯</div>
+				<div class="text">
+					<ul>
+						<li>Adobe Premiere</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="portfolio">
+		<h2 class="clip"><span class="title">portfolio</span></h2>
+		<div class="container">
+			<div class="slideshow">
+				<div class="slide__item fades">
+				  	<div class="slide__pagenumber">1 / 8</div>
+				  	<a href="https://youtu.be/we-twghIt3w" target="_blank">
+						<img src="images/VRHairSalon.png" style="width:100%;" class="forimg" alt="畢業專題-VR角色髮型設計">
+					</a>
+				<div class="slide__content">畢業專題-VR角色髮型設計</div>
+				</div>
+				<div class="slide__item fades">
+					<div class="slide__pagenumber">2 / 8</div>
+					<a href="https://youtu.be/-1ctJSU8_LY" target="_blank">
+						<img src="images/FOX.png" style="width:100%;" class="forimg" alt="電腦圖學-The Fox">
+					</a>
+					<div class="slide__content">電腦圖學-The Fox</div>
+				</div>
+				<div class="slide__item fades">
+					<div class="slide__pagenumber">3 / 8</div>
+					<a href="https://youtu.be/rz3XaouTt6w" target="_blank">
+						<img src="images/BouncingBall.png" style="width:100%;" class="forimg"alt="互動技術概論-Bouncing Ball">
+					</a>
+					<div class="slide__content">互動技術概論-Bouncing Ball</div>
+				</div>
+				<div class="slide__item fades">
+					<div class="slide__pagenumber">4 / 8</div>
+					<a href="https://youtu.be/BTc7iwMV0BY" target="_blank">
+						<img src="images/Among.png" style="width:100%;" class="forimg"alt="互動技術概論-Among Us障礙賽">
+					</a>
+					
+					<div class="slide__content">互動技術概論-Among Us障礙賽</div>
+				</div>
+				<div class="slide__item fades">
+					<div class="slide__pagenumber">5 / 8</div>
+					<a href="https://youtu.be/8vwR2MhHsQk" target="_blank">
+						<img src="images/cat.png" style="width:100%;" class="forimg" alt="遊戲程式設計-貓貓大冒險">
+					</a>
+					<div class="slide__content">遊戲程式設計-貓貓大冒險</div>
+				</div>
+				<div class="slide__item fades">
+					<div class="slide__pagenumber">6 / 8</div>
+					<a href="https://youtu.be/qjAKxVEbi3c" target="_blank">
+						<img src="images/Ican.png" style="width:100%;" class="forimg" alt="多媒體導論-我可以">
+					</a>
+					<div class="slide__content">多媒體導論-我可以</div>
+				</div>
+				<div class="slide__item fades">
+					<div class="slide__pagenumber">7 / 8</div>
+					<a href="https://sketchfab.com/yiyun12o9" target="_blank">
+						<img src="images/modeling.png" style="width:100%;" class="forimg" alt="Maya建模練習">
+					</a>
+					<div class="slide__content">Maya建模練習</div>
+				</div>
+				<div class="slide__item fades">
+					<div class="slide__pagenumber">8 / 8</div>
+					<a href="https://store.line.me/stickershop/author/4303738/zh-Hant" target="_blank">
+						<img src="images/line.png" style="width:100%;" class="forimg" alt="Line貼圖">
+					</a>
+					<div class="slide__content">Line貼圖</div>
+				</div>
+				<a id="prev" class="slide__arrow slide__arrow--prev"> ❮ </a>
+				<a id="next" class="slide__arrow slide__arrow--next"> ❯ </a>
+				<div class="slide__dot">
+				  <div class="dot" data-value="1"></div>
+				  <div class="dot" data-value="2"></div>
+				  <div class="dot" data-value="3"></div>
+				  <div class="dot" data-value="4"></div>
+				  <div class="dot" data-value="5"></div>
+				  <div class="dot" data-value="6"></div>
+				  <div class="dot" data-value="7"></div>
+				  <div class="dot" data-value="8"></div>
+				</div>
+			  </div>
+			<!-- <div id="carouselExampleFade" class="carousel slide carousel-fade shadow" data-ride="carousel">
 					<div class="carousel-inner">
 						<div class="pic carousel-item active">
 							<a href="https://youtu.be/we-twghIt3w" target="_blank"><img src="img/VRHairSalon.png" class="d-block w-100" alt="畢業專題-VR角色髮型設計"></a>
@@ -164,22 +233,50 @@
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
 						<span class="sr-only">Next</span>
 					</button>
-				</div>
-			</div>
-		</section>
-		<section id="contact">
-			<h2 class="clip"><span class="title">contact</span></h2>
-			<div>
-				<button class="custom-btn btn-3"><a href="mailto:yoyolee7012@gmail.com" class="text-decoration-none"><span><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 20 20">
-				<path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-				</svg>Email</span></a></button>
-				<button class="custom-btn btn-3"><a href="https://github.com/yiyun12o9" class="text-decoration-none" target="_blank"><span><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-github" viewBox="0 0 20 20">
-				<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-				</svg>Github</span></a></button>
-				<button class="custom-btn btn-3"><a href="https://www.facebook.com/yiyun12o9/" class="text-decoration-none" target="_blank"><span><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-facebook" viewBox="0 0 20 20">
-				<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-				</svg>Facebook</span></a></button>
-			</div>
-		</section>
-	</body>
+				</div> -->
+		</div>
+	</section>
+	<section id="contact">
+		<h2 class="clip"><span class="title">contact</span></h2>
+		<div>
+			<button class="custom-btn btn-3">
+				<a href="mailto:yoyolee7012@gmail.com" class="text-decoration-none">
+					<span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+							fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 20 20">
+							<path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+						</svg>Email
+					</span>
+				</a>
+			</button>
+			<button class="custom-btn btn-3">
+				<a href="https://github.com/yiyun12o9" class="text-decoration-none" target="_blank">
+					<span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+							fill="currentColor" class="bi bi-github" viewBox="0 0 20 20">
+							<path
+								d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+						</svg>Github
+					</span>
+				</a>
+			</button>
+			<button class="custom-btn btn-3">
+				<a href="https://www.facebook.com/yiyun12o9/" class="text-decoration-none"
+					target="_blank">
+					<span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-facebook" viewBox="0 0 20 20">
+							<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+						</svg>Facebook
+					</span>
+				</a>
+			</button>
+		</div>
+	</section>
+	<!-- TOP按鈕 -->
+	<div class="back-top hide" title="回頂部">Top</div>
+	<script type="text/javascript" src="./js/jquery-3.6.1.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+	
+</body>
+
 </html>
