@@ -29,13 +29,35 @@
 	</div>
 	<div class="desktop_menu">
 		<ul class="menu">
-			<li><a href="#aboutme">About</a>
-			<li><a href="#skills">Skills</a>
-			<li><a href="#portfolio">Portfolio</a>
-			<li><a href="#contact">Contact</a>
+			<li><a href="#aboutme">About</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</div>
-	<div class="mobile_menu">
+
+
+	<!-- 漢堡選單 -->
+	<div id="hammenu">
+		<label for="burger" id="flip">
+			<div class="container2" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+		</label>
+		<input type="checkbox" id="burger" style="display:none">
+		<ul class="forhammenu" id="panel">
+			<li><a href="#aboutme">About</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</div>	
+
+
+
+	<!-- <div class="mobile_menu">
 		<div class="ham_icon" onclick="toggleMenu();">
 			<img src="images/hamburger_icon.png" width="35" height="35">
 		</div>
@@ -47,7 +69,7 @@
 				<li><a href="#contact">Contact</a>
 			</ul>
 		</div>
-	</div>
+	</div> -->
 	<header class="pt-5" id="thetop">
 		<h1><span class="name mb-4">Hello~I'm</span><span class="name1 mb-5">Yi Yun</span></h1>
 	</header>
@@ -80,8 +102,8 @@
 				<div class="header">程式設計</div>
 				<div class="text">
 					<ul>
-						<li>HTML5</li>
-						<li>CSS3</li>
+						<li>HTML</li>
+						<li>CSS</li>
 					</ul>
 				</div>
 			</div>
@@ -109,138 +131,54 @@
 	<section id="portfolio">
 		<h2 class="clip"><span class="title">portfolio</span></h2>
 		<div class="container">
-			<div class="slideshow">
-				<div class="slide__item fades">
-				  	<div class="slide__pagenumber">1 / 8</div>
-				  	<a href="https://youtu.be/we-twghIt3w" target="_blank">
-						<img src="images/VRHairSalon.png" style="width:100%;" class="forimg" alt="畢業專題-VR角色髮型設計">
-					</a>
-				<div class="slide__content">畢業專題-VR角色髮型設計</div>
-				</div>
-				<div class="slide__item fades">
-					<div class="slide__pagenumber">2 / 8</div>
-					<a href="https://youtu.be/-1ctJSU8_LY" target="_blank">
-						<img src="images/FOX.png" style="width:100%;" class="forimg" alt="電腦圖學-The Fox">
-					</a>
-					<div class="slide__content">電腦圖學-The Fox</div>
-				</div>
-				<div class="slide__item fades">
-					<div class="slide__pagenumber">3 / 8</div>
-					<a href="https://youtu.be/rz3XaouTt6w" target="_blank">
-						<img src="images/BouncingBall.png" style="width:100%;" class="forimg"alt="互動技術概論-Bouncing Ball">
-					</a>
-					<div class="slide__content">互動技術概論-Bouncing Ball</div>
-				</div>
-				<div class="slide__item fades">
-					<div class="slide__pagenumber">4 / 8</div>
-					<a href="https://youtu.be/BTc7iwMV0BY" target="_blank">
-						<img src="images/Among.png" style="width:100%;" class="forimg"alt="互動技術概論-Among Us障礙賽">
-					</a>
-					
-					<div class="slide__content">互動技術概論-Among Us障礙賽</div>
-				</div>
-				<div class="slide__item fades">
-					<div class="slide__pagenumber">5 / 8</div>
-					<a href="https://youtu.be/8vwR2MhHsQk" target="_blank">
-						<img src="images/cat.png" style="width:100%;" class="forimg" alt="遊戲程式設計-貓貓大冒險">
-					</a>
-					<div class="slide__content">遊戲程式設計-貓貓大冒險</div>
-				</div>
-				<div class="slide__item fades">
-					<div class="slide__pagenumber">6 / 8</div>
-					<a href="https://youtu.be/qjAKxVEbi3c" target="_blank">
-						<img src="images/Ican.png" style="width:100%;" class="forimg" alt="多媒體導論-我可以">
-					</a>
-					<div class="slide__content">多媒體導論-我可以</div>
-				</div>
-				<div class="slide__item fades">
-					<div class="slide__pagenumber">7 / 8</div>
-					<a href="https://sketchfab.com/yiyun12o9" target="_blank">
-						<img src="images/modeling.png" style="width:100%;" class="forimg" alt="Maya建模練習">
-					</a>
-					<div class="slide__content">Maya建模練習</div>
-				</div>
-				<div class="slide__item fades">
-					<div class="slide__pagenumber">8 / 8</div>
-					<a href="https://store.line.me/stickershop/author/4303738/zh-Hant" target="_blank">
-						<img src="images/line.png" style="width:100%;" class="forimg" alt="Line貼圖">
-					</a>
-					<div class="slide__content">Line貼圖</div>
-				</div>
-				<a id="prev" class="slide__arrow slide__arrow--prev"> ❮ </a>
-				<a id="next" class="slide__arrow slide__arrow--next"> ❯ </a>
-				<div class="slide__dot">
-				  <div class="dot" data-value="1"></div>
-				  <div class="dot" data-value="2"></div>
-				  <div class="dot" data-value="3"></div>
-				  <div class="dot" data-value="4"></div>
-				  <div class="dot" data-value="5"></div>
-				  <div class="dot" data-value="6"></div>
-				  <div class="dot" data-value="7"></div>
-				  <div class="dot" data-value="8"></div>
-				</div>
-			  </div>
-			<!-- <div id="carouselExampleFade" class="carousel slide carousel-fade shadow" data-ride="carousel">
-					<div class="carousel-inner">
-						<div class="pic carousel-item active">
-							<a href="https://youtu.be/we-twghIt3w" target="_blank"><img src="img/VRHairSalon.png" class="d-block w-100" alt="畢業專題-VR角色髮型設計"></a>
-							<div class="carousel-caption d-none d-md-block">
-								<h5 class="p-2 bg-dark">畢業專題-VR角色髮型設計</h5>
-							</div>
-						</div>
-						<div class="pic carousel-item">
-							<a href="https://youtu.be/-1ctJSU8_LY" target="_blank"><img src="img/FOX.png" class="d-block w-100" alt="電腦圖學-The Fox"></a>
-							<div class="carousel-caption d-none d-md-block">
-								<h5 class="p-2 bg-dark">電腦圖學-The Fox</h5>
-							</div>
-						</div>
-						<div class="pic carousel-item">
-							<a href="https://youtu.be/rz3XaouTt6w" target="_blank"><img src="img/BouncingBall.png" class="d-block w-100" alt="互動技術概論-Bouncing Ball"></a>
-							<div class="carousel-caption d-none d-md-block">
-								<h5 class="p-2 bg-dark">互動技術概論-Bouncing Ball</h5>
-							</div>
-						</div>
-						<div class="pic carousel-item">
-							<a href="https://youtu.be/BTc7iwMV0BY" target="_blank"><img src="img/Among.png" class="d-block w-100" alt="互動技術概論-Among Us障礙賽"></a>
-							<div class="carousel-caption d-none d-md-block">
-								<h5 class="p-2 bg-dark">互動技術概論-Among Us障礙賽</h5>
-							</div>
-						</div>
-						<div class="pic carousel-item">
-							<a href="https://youtu.be/8vwR2MhHsQk" target="_blank"><img src="img/cat.png" class="d-block w-100" alt="遊戲程式設計-貓貓大冒險"></a>
-							<div class="carousel-caption d-none d-md-block">
-								<h5 class="p-2 bg-dark">遊戲程式設計-貓貓大冒險</h5>
-							</div>
-						</div>
-						<div class="pic carousel-item">
-							<a href="https://youtu.be/qjAKxVEbi3c" target="_blank"><img src="img/Ican.png" class="d-block w-100" alt="多媒體導論-我可以"></a>
-							<div class="carousel-caption d-none d-md-block">
-								<h5 class="p-2 bg-dark">多媒體導論-我可以</h5>
-							</div>
-						</div>
-						<div class="pic carousel-item">
-							<a href="https://sketchfab.com/yiyun12o9" target="_blank"><img src="img/modeling.png" class="d-block w-100" alt="Maya建模練習"></a>
-							<div class="carousel-caption d-none d-md-block">
-								<h5 class="p-2 bg-dark">Maya建模練習</h5>
-							</div>
-						</div>
-					</div>
-					<button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</button>
-				</div> -->
+			<a href="https://youtu.be/we-twghIt3w" target="_blank">
+				<img src="images/VRHairSalon.png" style="width:100%;" class="forimg" alt="畢業專題-VR角色髮型設計">
+				<p class="forword">畢業專題-VR角色髮型設計</p>
+				<p class="forword1">1 / 8</p>
+			</a>
+			<a href="https://youtu.be/-1ctJSU8_LY" target="_blank">
+				<img src="images/FOX.png" style="width:100%;" class="forimg" alt="電腦圖學-The Fox">
+				<p class="forword">電腦圖學-The Fox</p>
+				<p class="forword1">2 / 8</p>
+			</a>
+			<a href="https://youtu.be/rz3XaouTt6w" target="_blank">
+				<img src="images/BouncingBall.png" style="width:100%;" class="forimg"alt="互動技術概論-Bouncing Ball">
+				<p class="forword">互動技術概論-Bouncing Ball</p>
+				<p class="forword1">3 / 8</p>
+			</a>
+			<a href="https://youtu.be/BTc7iwMV0BY" target="_blank">
+				<img src="images/Among.png" style="width:100%;" class="forimg"alt="互動技術概論-Among Us障礙賽">
+				<p class="forword">互動技術概論-Among Us障礙賽</p>
+				<p class="forword1">4 / 8</p>
+			</a>
+			<a href="https://youtu.be/8vwR2MhHsQk" target="_blank">
+				<img src="images/cat.png" style="width:100%;" class="forimg" alt="遊戲程式設計-貓貓大冒險">
+				<p class="forword">遊戲程式設計-貓貓大冒險</p>
+				<p class="forword1">5 / 8</p>
+			</a>
+			<a href="https://youtu.be/qjAKxVEbi3c" target="_blank">
+				<img src="images/Ican.png" style="width:100%;" class="forimg" alt="多媒體導論-我可以">
+				<p class="forword">多媒體導論-我可以</p>
+				<p class="forword1">6 / 8</p>
+			</a>
+			<a href="https://sketchfab.com/yiyun12o9" target="_blank">
+				<img src="images/modeling.png" style="width:100%;" class="forimg" alt="Maya建模練習">
+				<p class="forword">Maya建模練習</p>
+				<p class="forword1">7 / 8</p>
+			</a>
+			<a href="https://store.line.me/stickershop/author/4303738/zh-Hant" target="_blank">
+				<img src="images/line.png" style="width:100%;" class="forimg" alt="Line貼圖">
+				<p class="forword">Line貼圖</p>
+				<p class="forword1">8 / 8</p>
+			</a>
+			
 		</div>
 	</section>
 	<section id="contact">
 		<h2 class="clip"><span class="title">contact</span></h2>
 		<div>
 			<button class="custom-btn btn-3">
-				<a href="mailto:yoyolee7012@gmail.com" class="text-decoration-none">
+				<a href="mailto:yiyun3219@gmail.com" class="text-decoration-none">
 					<span>
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
 							fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 20 20">
@@ -275,6 +213,7 @@
 	<!-- TOP按鈕 -->
 	<div class="back-top hide" title="回頂部">Top</div>
 	<script type="text/javascript" src="./js/jquery-3.6.1.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="./js/index.js"></script>
 	
 </body>
